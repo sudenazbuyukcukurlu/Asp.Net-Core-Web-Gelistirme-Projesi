@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace EntityLayer.Concrete
 {
-    public class Portfolio
+    public class SocialMedia
     {
-        public int PortfolioID { get; set; }
+        public int SocialMediaID { get; set; }
         public string Name { get; set; }
-        public string ImageUrl { get; set; }
+        public string Url { get; set; }
+        public string Icon { get; set; }
+        public bool Status { get; set; }
     }
 }
