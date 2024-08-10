@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace EntityLayer.Concrete
 {
-    public class Service
+    public class Portfolio
     {
-        public int ServiceID { get; set; }
-        public string Tıtle { get; set; }
-        public string ImageUrl { get; set; }
+        public int PortfolioID { get; set; }
+        public string Name { get; set; }
+        public string Value { get; set; }
     }
 }
