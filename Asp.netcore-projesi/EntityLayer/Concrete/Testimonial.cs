@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace EntityLayer.Concrete
 {
-    class Testimonial
+    public class Testimonial
     {
         [Key]
         public int TestimonialID { get; set; }
