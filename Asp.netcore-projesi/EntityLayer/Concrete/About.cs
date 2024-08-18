@@ -7,7 +7,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace EntityLayer.Concrete
 {
-   public class About
+   public class About 
 
     {
         [Key]
@@ -19,6 +19,7 @@ namespace EntityLayer.Concrete
         public string Phone { get; set; }
         public string Address { get; set; }
         public string ImageUrl { get; set; }
+
 
     }
 }
