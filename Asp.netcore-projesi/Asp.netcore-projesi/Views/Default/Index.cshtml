@@ -33,6 +33,8 @@
   @await  Html.PartialAsync("HeaderPartial")
   <body id="top">
     @await Html.PartialAsync("NavbarPartial")
+    <br /> 
+    @await Component.InvokeAsync("FeatureList")
     <div class="page-content">
       <div id="content">
 <header>
