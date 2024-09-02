@@ -12,5 +12,10 @@ namespace Asp.netcore_projesi.Controllers
         {
             return PartialView();
         }
+        public PartialViewResult NavbarPartial()
+        {
+            return PartialView();
+        }
+
     }
 }
