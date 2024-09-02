@@ -8,5 +8,9 @@ namespace Asp.netcore_projesi.Controllers
         {
             return View();
         }
+        public PartialViewResult HeaderPartial()
+        {
+            return PartialView();
+        }
     }
 }
