@@ -5,12 +5,12 @@ using System.Collections.Generic;
 
 namespace Asp.netcore_projesi.ViewComponents.Service
 {
-    public class ServiceList:ViewComponent
+    public class ServiceList: ViewComponent
     {
-        AboutManager aboutManager = new AboutManager(new EfAboutDal());
+        ServiceManager serviceManager = new ServiceManager(new EfServiceDal());
         public IViewComponentResult Invoke()
         {
-            var values = aboutManager.TGetList();
+            var values = serviceManager.TGetList();
             return View(values);
         }
     

@@ -9,9 +9,13 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Concrete
 {
-    public  class ServiceManager : IServiceService
+    public  class ServiceManager :IGenericService<Service>
     {
         IServiceDal _serviceDal;
+        public ServiceManager(IServiceDal serviceDal)
+        {
+                _serviceDal = serviceDal;
+        }
         public Service GetByID(int id)
         {
             return _serviceDal.GetById(id);
