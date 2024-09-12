@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace BusinessLayer.Concrete
 {
-    class ExperienceManager : IExperienceService
+    public class ExperienceManager : IExperienceService
     {
         IExperienceDal _experienceDal;
         public ExperienceManager(IExperienceDal experienceDal)
@@ -40,7 +40,7 @@ namespace BusinessLayer.Concrete
         public void TUpdate(Experience t)
         {
 
-            ;_experienceDal.Update(t);
+            ; _experienceDal.Update(t);
         }
     }
 }
