@@ -7,28 +7,32 @@
         </div>
         <div class="grid bp-gallery pb-3" data-aos="zoom-in-up" data-aos-delay="100">
             <div class="grid-sizer"></div>
-            <div class="grid-item">
-                <a href="https://dribbble.com">
-                    <figure class="portfolio-item">
-                        <img src="~/Template/images/portfolio/1-small.png" data-bp="images/portfolio/1.jpg" />
-                        <figcaption>
-                            <h4 class="h5 mb-0">Web Design</h4>
-                            <div>Dribbble.com</div>
-                        </figcaption>
-                    </figure>
-                </a>
-            </div>
-            <div class="grid-item">
-                <a href="https://github.com">
-                    <figure class="portfolio-item">
-                        <img src="~/Template/images/portfolio/2-small.png" data-bp="images/portfolio/2.jpg" data-caption="Example of an optional caption." />
-                        <figcaption>
-                            <h4 class="h5 mb-0">Web Development</h4>
-                            <div>GitHub.com</div>
-                        </figcaption>
-                    </figure>
-                </a>
-            </div>
+            @foreach (var item in Model)
+            {
+                <div class="grid-item">
+                    <a href="https://dribbble.com">
+                        <figure class="portfolio-item">
+                            <img src="@item.ImageUrl" data-bp="@item.ImageUrl2" />
+                            <figcaption>
+                                <h4 class="h5 mb-0">@item.Name</h4>
+                                <div>@item.ProjectUrl</div>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+                <div class="grid-item">
+                    e
+                    <a href="https://github.com">
+                        <figure class="portfolio-item">
+                            <img src="~/Template/images/portfolio/2-small.png" data-bp="images/portfolio/2.jpg" data-caption="Example of an optional caption." />
+                            <figcaption>
+                                <h4 class="h5 mb-0">Web Development</h4>
+                                <div>GitHub.com</div>
+                            </figcaption>
+                        </figure>
+                    </a>
+                </div>
+            }
         </div>
     </div>
 </div>
